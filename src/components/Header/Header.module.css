@@ -1,0 +1,18 @@
+.header {
+    grid-area: h;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1a7056;
+    position: relative;
+}
+
+.logo {
+    margin-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2vmax;
+    letter-spacing: 0.15vmax;
+    font-weight: 600;
+    color: #ffffff;
+}
+

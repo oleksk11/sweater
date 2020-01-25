@@ -1,0 +1,13 @@
+button {
+    background-color: #3c3d41;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9vmax;
+    border: none;
+    height: 2vmax;
+    width: 6vmax;
+    margin-bottom: 2vmax;
+}
+button:hover {
+    background-color: #67696e;
+}
