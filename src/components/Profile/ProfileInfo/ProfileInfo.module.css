@@ -1,5 +1,14 @@
+.profileInfo {
+display: grid;
+grid-template-columns: 3fr 9fr; /* 2 columns */
+margin-bottom: 6vmax;
+}
+.userName {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1vmax;
+}
 img {
     height: 10vmax;
     width: 10vmax;
 }
-

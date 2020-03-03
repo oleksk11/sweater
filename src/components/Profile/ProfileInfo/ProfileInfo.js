@@ -8,7 +8,12 @@ function ProfileInfo() {
 				<img src='profile.jpg'></img>
 			</div>
 			<div className={classes.descriptionBlock}>
-				description
+				<div className={classes.userName}>
+					Paweł Kot
+				</div>
+				<div className={classes.userInfo}>
+					User info
+				</div>
 			</div>
 		</div>
 	);

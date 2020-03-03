@@ -18,6 +18,7 @@ function App(props) {
         <Header />
         <Navbar />
         <div className='app-wraper-content'>
+          <Route exact path='/' render={ () => <Profile posts={props.state.profilePage.posts}/>} /> 
           <Route exact path='/profile' render={ () => <Profile posts={props.state.profilePage.posts}/>} /> {/* toczny adres, jeśli będzie profile/blabla/1 -> nie wyświetli zawartość komponentu profile, bez exact - wyświetli */}
           <Route exact path='/dialogs' render={ () => <Dialogs dialogs={props.state.dialogsPage.dialogs} messages={props.state.dialogsPage.messages}/>} />
           <Route exact path='/news' component={News} />
