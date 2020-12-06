@@ -11,3 +11,10 @@ button {
 button:hover {
     background-color: #67696e;
 }
+textarea {
+    outline: none;
+    border: 1px solid #999;
+    resize: none;
+    width: 40vmax;
+    height: 5vmax;
+}

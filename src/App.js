@@ -10,17 +10,18 @@ import Settings from './components/Settings/Settings';
 
 import {BrowserRouter, Route } from 'react-router-dom';
 
-function App(props) {
+const App = (props) => {
 
-  
   return (
       <div className='app-wrapper'>
         <Header />
         <Navbar />
         <div className='app-wraper-content'>
-          <Route exact path='/' render={ () => <Profile posts={props.state.profilePage.posts}/>} /> 
-          <Route exact path='/profile' render={ () => <Profile posts={props.state.profilePage.posts}/>} /> {/* toczny adres, jeśli będzie profile/blabla/1 -> nie wyświetli zawartość komponentu profile, bez exact - wyświetli */}
-          <Route exact path='/dialogs' render={ () => <Dialogs dialogs={props.state.dialogsPage.dialogs} messages={props.state.dialogsPage.messages}/>} />
+          <Route exact path='/' render={ () => <Profile profilePage={props.state.profilePage}
+                                                dispatch={props.dispatch}/>} /> 
+          <Route path='/profile' render={ () => <Profile profilePage={props.state.profilePage}
+                                                       dispatch={props.dispatch}  />} /> 
+          <Route exact path='/dialogs' render={ () => <Dialogs store={props.store} />} />
           <Route exact path='/news' component={News} />
           <Route exact path='/music' component={Music} />
           <Route exact path='/settings' component={Settings} />

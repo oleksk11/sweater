@@ -1,3 +1,21 @@
+.dialog {
+    display: flex;
+    margin: 0 10vmax 2vmax 0;
+}
 .dialog .active {
     font-weight: 600;
+}
+.dialog .userImg img {
+    height: 4vmax;
+    width: 4vmax;
+    border-radius: 50%;
+}
+.userName {
+    margin-left: 1vmax;
+}
+.userName a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
 }

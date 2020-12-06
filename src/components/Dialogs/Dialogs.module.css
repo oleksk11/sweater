@@ -1,4 +1,42 @@
 .dialogs {
-    display: grid;
-    grid-template-columns: 2fr 10fr; /* 2 columns */
+	display: grid;
+	/*grid-template-columns: 2fr 10fr;*/
+	grid-template-columns: repeat(6, 2fr);
+	grid-auto-rows: minmax(80px, auto);
+	grid-template-areas: 
+	"di m m m m m"
+	"ma ma ma mb . .";
+}
+.dialogsItems {
+	grid-area: di;
+}
+.messages {
+	grid-area: m;
+}
+.btnView {
+	grid-area: mb;
+}
+.msgView {
+	grid-area: ma;
+}
+.addMsgBtn {
+	background-color: #3c3d41;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.9vmax;
+	border: none;
+	height: 2vmax;
+	width: 8vmax;
+	margin-bottom: 2vmax;
+	&:hover {
+		background-color: #67696e;
+	}
+}
+
+.msgArea {
+	outline: none;
+	border: 1px solid #999;
+	resize: none;
+	width: 30vmax;
+	height: 5vmax;
 }
